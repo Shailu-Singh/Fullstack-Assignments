@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Students</title>
+</head>
+<body>
+
+    <h1>Student List</h1>
+
+    <a href="/">Home</a>
+    <a href="/students/new">Add Student</a>
+
+    <ul>
+
+        <% students.forEach(student => { %>
+
+            <li>
+                <strong><%= student.name %></strong>
+                - <%= student.course %>
+
+                <a href="/students/<%= student.id %>">
+                    View Details
+                </a>
+            </li>
+
+        <% }) %>
+
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concentric Circles</title>
+
+    <style>
+        .circle {
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle1 {
+            width: 60px;
+            height: 60px;
+            background-color: skyblue;
+        }
+
+        .circle2 {
+            width: 40px;
+            height: 40px;
+            background-color: lightgreen;
+        }
+
+        .circle3 {
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+        }
+
+        .container {
+            position: relative;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+
+</body>
+</html>
